@@ -105,15 +105,41 @@ class AuthController extends Controller
             case 'google':
                     
                     $data = $this->prepareGoogleData($user);
+
+                    $user = User::where('email','=',$data['email'])->first();
                     
-                    Auth::login(User::firstOrCreate($data));
+                    if(is_null($user))
+                    {
+                        
+                        Auth::login(User::firstOrCreate($data));
+                    
+                    }
+                    else
+                    {
+                        
+                        Auth::login($user);
+                    
+                    }
 
                 break;
             case 'facebook':
                     
                     $data = $this->prepareFacebookData($user);
                     
-                    Auth::login(User::firstOrCreate($data));
+                    $user = User::where('email','=',$data['email'])->first();
+                    
+                    if(is_null($user))
+                    {
+                        
+                        Auth::login(User::firstOrCreate($data));
+                    
+                    }
+                    else
+                    {
+                        
+                        Auth::login($user);
+                    
+                    }
 
                 break;
 

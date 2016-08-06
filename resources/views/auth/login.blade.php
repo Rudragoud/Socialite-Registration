@@ -57,6 +57,19 @@
                                 <a class="btn btn-link" href="{{ url('/password/reset') }}">Forgot Your Password?</a>
                             </div>
                         </div>
+
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <a class="btn btn-danger btn-block btn-gplus" href="http://ultron.dev/social/login/redirect/google"><i class="fa fa-google-plus"></i>Google</a>
+                            </div>
+                        </div>
+                        
+                         <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <a class="btn btn-primary btn-block btn-fb" href="http://ultron.dev/social/login/redirect/facebook"><i class="fa fa-facebook"></i>Facebook</a>
+                            </div>
+                        </div>
+
                     </form>
                 </div>
             </div>
