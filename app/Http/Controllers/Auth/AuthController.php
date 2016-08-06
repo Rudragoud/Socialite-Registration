@@ -149,7 +149,7 @@ class AuthController extends Controller
         return [
                     'email' => $user->getEmail(),
                     'name' => $firstname,
-                    'password' => 'demo1234'
+                    'password' => bcrypt('demo1234')
                 ];
     }
 
@@ -158,7 +158,7 @@ class AuthController extends Controller
         return [
                     'email' => $user->getEmail(),
                     'name' => $user->user['name']['givenName'],
-                    'password' => 'demo1234'
+                    'password' => bcrypt('demo1234')
                 ];
     }
 

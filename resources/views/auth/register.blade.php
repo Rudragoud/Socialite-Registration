@@ -81,7 +81,7 @@
                         </div>
                          <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <a class="btn btn-danger btn-block btn-gplus" href="http://ultron.dev/social/login/redirect/facebook"><i class="fa fa-google-plus"></i>Facebbok</a>
+                                <a class="btn btn-primary btn-block btn-fb" href="http://ultron.dev/social/login/redirect/facebook"><i class="fa fa-facebook"></i>Facebook</a>
                             </div>
                         </div>
 
